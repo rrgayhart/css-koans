@@ -1,0 +1,23 @@
+/**
+ * Palette
+ * This should be the entire palette, using color names (e.g. $light-gray) and NOT context-specific
+ * names (e.g. $highlight-color)
+ */
+
+$dull-blue: rgb(63, 136, 152);
+$dull-green: rgb(64, 171, 149);
+$lemon-yellow: RGB(218, 231, 21);
+
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$off-white: rgba(251, 247, 247, 0.98);
+$light-gray: rgb(222, 222, 222);
+
+
+/**
+ * Contextual Assignments
+ * These should be context specific assignments of the colors above, e.g. $highlight-color: $lime;
+ */
+
+$background: $dull-blue;
+$container-background: $white;
