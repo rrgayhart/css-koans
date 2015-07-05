@@ -5,7 +5,7 @@
 > A paradox to be meditated upon that is used to train Zen Buddhist monks to abandon ultimate dependence on reason and to force them into gaining sudden intuitive enlightenment.
 -Merriam-Webster
 
-[Visit the Production App](http://css-koans.herokuapp.com/)
+[Visit the Production App](http://css-koans.com/)
 
 ## System Setup
 1. Make sure you have a Ruby gem manager installed (e.g. RVM or Rbenv).
