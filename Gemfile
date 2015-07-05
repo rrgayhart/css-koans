@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'unicorn'
 
+
 group :development, :test do
   gem 'spring'
   gem 'byebug'
@@ -19,9 +20,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'shoulda'
   gem 'database_cleaner'
 end
 
