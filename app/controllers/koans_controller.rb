@@ -1,0 +1,2 @@
+class KoansController < ApplicationController
+end
