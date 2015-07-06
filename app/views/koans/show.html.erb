@@ -1,16 +1,16 @@
 <section class="koan-show-container clearfix">
-  <div class="koan-email-container fluid-span-10 fluid-offset-1 clearfix">
+  <div class="koan-email-container clearfix">
     <div class="email-heading clearfix">
       <h3><%= @koan.name %></h3>
     </div>
     <div class="email-body clearfix">
     </div>
   </div>
-  <div class="fluid-span-10 fluid-offset-1 clearfix">
-    <div class="code-block fluid-span-6 clearfix">
+  <div class="code-row clearfix">
+    <div class="code-block clearfix">
       <%= render partial: "codepen_render", locals: { problem: @koan.problem, name: @koan.name } %>
     </div>
-    <div class="goal-block fluid-span-6 fluid-offset-6">
+    <div class="goal-block">
     </div>
   </div>
 </section>

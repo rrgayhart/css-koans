@@ -1,8 +1,13 @@
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
 .koan-show-container {
   @include container();
 }
 
 .koan-email-container {
+  @include fluid-span-10();
+  @include fluid-offset-1();
   position: relative;
   float: left;
   clear: both;
@@ -29,18 +34,33 @@
   overflow: scroll;
 }
 
+.code-row {
+  @include fluid-span-10();
+  @include fluid-offset-1();
+}
+
 .code-block {
+  @include fluid-span-6();
   height: 261px;
   margin-top: 20px;
   border: 1px solid $black;
   border-radius: 6px;
   overflow: hidden;
   z-index: 1000;
+  @media (max-width: $screen-md-min) {
+    @include fluid-span-12();
+  }
 }
 
 .goal-block {
+  @include fluid-span-6();
+  @include fluid-offset-6();
   height: 261px;
   border: 1px solid $black;
   border-radius: 6px;
   margin-top: -261px;
+  @media (max-width: $screen-md-min) {
+    @include fluid-span-12();
+    margin: 20px 0 0 0;
+  }
 }
