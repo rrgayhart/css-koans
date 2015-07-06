@@ -1,3 +1,46 @@
 .koan-show-container {
   @include container();
 }
+
+.koan-email-container {
+  position: relative;
+  float: left;
+  clear: both;
+  height: 191px;
+  margin-top: 20px;
+}
+
+.email-heading {
+  border-bottom: 1px solid $email-border-bottom;
+  height: 39px;
+  width: 100%;
+  h3 {
+    margin: 5px 0 0 4.01786%;
+    line-height: 1.38;
+    font-size: 1.313em;
+    font-weight: 400;
+  }
+}
+
+.email-body {
+  width: 100%;
+  background-color: $email-body;
+  height: 152px;
+  overflow: scroll;
+}
+
+.code-block {
+  height: 261px;
+  margin-top: 20px;
+  border: 1px solid $black;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.goal-block {
+  height: 261px;
+  border: 1px solid $black;
+  border-radius: 6px;
+  margin-top: -261px;
+}

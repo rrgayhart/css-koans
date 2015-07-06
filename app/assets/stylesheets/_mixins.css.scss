@@ -1,11 +1,11 @@
 @mixin container() {
-  width: 66%;
+  width: 90%;
+  height: 800px;
   margin: auto;
   padding: 8px;
   background: $container-background;
   font: $font-regular;
-
-  @media (min-width: 1200px) {
-    width: 800px;
-  }
+  /*@media (min-width: 1200px) {*/
+    /*width: 800px;*/
+  /*}*/
 }

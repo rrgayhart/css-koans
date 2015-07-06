@@ -11,7 +11,8 @@ $lemon-yellow: RGB(218, 231, 21);
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $off-white: rgba(251, 247, 247, 0.98);
-$light-gray: rgb(222, 222, 222);
+$light-grey: rgb(222, 222, 222);
+$dark-grey: rgb(102, 102, 102);
 
 
 /**
@@ -21,3 +22,5 @@ $light-gray: rgb(222, 222, 222);
 
 $background: $dull-blue;
 $container-background: $white;
+$email-border-bottom: $dark-grey;
+$email-body: $off-white;

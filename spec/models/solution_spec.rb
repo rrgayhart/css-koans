@@ -1,0 +1,10 @@
+require 'spec_helper'
+
+describe Solution do
+  context "#validations" do
+    it { should validate_presence_of :codepen_slug }
+    it { should validate_presence_of :codepen_username }
+    it { should validate_presence_of :full_name }
+    it { should belong_to :koan }
+  end
+end
