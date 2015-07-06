@@ -23,21 +23,19 @@ ActiveRecord::Schema.define(version: 20150706022023) do
   end
 
   create_table "problems", force: true do |t|
-    t.string   "codepen_slug",                                 null: false
-    t.string   "codepen_username", default: "rrgayhart",       null: false
-    t.string   "full_name",        default: "Romeeka Gayhart", null: false
+    t.string   "codepen_slug",                           null: false
+    t.string   "codepen_username", default: "rrgayhart", null: false
     t.integer  "koan_id"
-    t.datetime "created_at",                                   null: false
-    t.datetime "updated_at",                                   null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
   end
 
   create_table "solutions", force: true do |t|
-    t.string   "codepen_slug",                                 null: false
-    t.string   "codepen_username", default: "rrgayhart",       null: false
-    t.string   "full_name",        default: "Romeeka Gayhart", null: false
+    t.string   "codepen_slug",                           null: false
+    t.string   "codepen_username", default: "rrgayhart", null: false
     t.integer  "koan_id"
-    t.datetime "created_at",                                   null: false
-    t.datetime "updated_at",                                   null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
   end
 
   add_index "solutions", ["koan_id"], name: "index_solutions_on_koan_id", using: :btree

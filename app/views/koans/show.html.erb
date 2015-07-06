@@ -5,15 +5,10 @@
     </div>
     <div class="email-body clearfix">
     </div>
+  </div>
+  <div class="fluid-span-10 fluid-offset-1 clearfix">
     <div class="code-block fluid-span-6 clearfix">
-      <p data-height="245" data-theme-id="16527" data-slug-hash="yNaZoa" data-default-tab="result" data-user="rrgayhart" class='codepen'>
-        See the Pen
-        <a href='http://codepen.io/rrgayhart/pen/yNaZoa/'>
-          <%= @koan.name %>
-        </a>
-        by Romeeka Gayhart (<a href='http://codepen.io/rrgayhart'>@rrgayhart</a>) on <a href='http://codepen.io'>CodePen</a>.
-      </p>
-      <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      <%= render partial: "codepen_render", locals: { problem: @koan.problem, name: @koan.name } %>
     </div>
     <div class="goal-block fluid-span-6 fluid-offset-6">
     </div>
