@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150706022023) do
+ActiveRecord::Schema.define(version: 20150718215609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,11 +31,15 @@ ActiveRecord::Schema.define(version: 20150706022023) do
   end
 
   create_table "solutions", force: true do |t|
-    t.string   "codepen_slug",                           null: false
-    t.string   "codepen_username", default: "rrgayhart", null: false
+    t.string   "codepen_slug",                             null: false
+    t.string   "codepen_username",   default: "rrgayhart", null: false
     t.integer  "koan_id"
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "solutions", ["koan_id"], name: "index_solutions_on_koan_id", using: :btree
