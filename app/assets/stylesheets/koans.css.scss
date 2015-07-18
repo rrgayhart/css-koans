@@ -1,6 +1,3 @@
-$screen-md-min: 992px;
-$screen-sm-min: 768px;
-
 .koan-show-container {
   @include container();
 }
@@ -51,6 +48,28 @@ $screen-sm-min: 768px;
     @include fluid-span-12();
   }
 }
+
+.interaction-row {
+  margin-top: 27px;
+  @include fluid-span-10();
+  @include fluid-offset-1();
+
+  .fork-button-block {
+    @include fluid-span-6();
+    @media (max-width: $screen-md-min) {
+      @include fluid-span-12();
+    }
+
+    .codepen-fork {
+      @include forkButton();
+      width: 45%;
+      @media (max-width: $screen-md-min) {
+        width: 100%;
+      }
+    }
+  }
+}
+
 
 .goal-block {
   @include fluid-span-6();

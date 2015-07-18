@@ -1,3 +1,6 @@
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
 @mixin container() {
   width: 90%;
   height: 800px;
@@ -5,4 +8,19 @@
   padding: 8px;
   background: $container-background;
   font: $font-regular;
+  @media (max-width: $screen-md-min) {
+    height: 100%;
+  }
+}
+
+@mixin forkButton() {
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  background-color: $action-button;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  &:hover {
+    background-color: $action-button-hover;
+  }
 }

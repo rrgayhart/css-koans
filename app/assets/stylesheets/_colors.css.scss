@@ -5,8 +5,10 @@
  */
 
 $dull-blue: rgb(63, 136, 152);
+$dull-green-darker: rgb(58, 154, 134);
 $dull-green: rgb(64, 171, 149);
-$lemon-yellow: RGB(218, 231, 21);
+$dull-green-lighter: rgb(117, 194, 179);
+$lemon-yellow: rgb(218, 231, 21);
 
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
@@ -24,3 +26,5 @@ $background: $dull-blue;
 $container-background: $white;
 $email-border-bottom: $dark-grey;
 $email-body: $off-white;
+$action-button: $dull-green;
+$action-button-hover: $dull-green-darker;

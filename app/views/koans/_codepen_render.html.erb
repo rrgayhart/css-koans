@@ -5,7 +5,7 @@ data-default-tab="result"
 data-user="<%=problem.codepen_username%>"
 class='codepen'>
   See the Pen
-  <a href="<%="http://codepen.io/#{problem.codepen_username}/pen/#{problem.codepen_slug}/"%>">
+  <a href="<%= problem.codepen_permalink %>">
     <%= name %>
   </a>
 </p>
