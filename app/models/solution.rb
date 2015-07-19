@@ -8,4 +8,8 @@ class Solution < ActiveRecord::Base
   validates_presence_of :codepen_username
 
   belongs_to :koan
+
+  def image_permalink
+    "http://codepen.io/#{codepen_username}/pen/#{codepen_slug}/image/large.png"
+  end
 end
