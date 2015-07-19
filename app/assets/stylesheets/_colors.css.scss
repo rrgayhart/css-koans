@@ -14,7 +14,8 @@ $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $off-white: rgba(251, 247, 247, 0.98);
 $light-grey: rgb(222, 222, 222);
-$dark-grey: rgb(102, 102, 102);
+$dull-grey: rgb(102, 102, 102);
+$dark-grey: #3d3d3e;
 
 
 /**
@@ -24,7 +25,9 @@ $dark-grey: rgb(102, 102, 102);
 
 $background: $dull-blue;
 $container-background: $white;
-$email-border-bottom: $dark-grey;
+$email-border-bottom: $dull-grey;
 $email-body: $off-white;
 $action-button: $dull-green;
 $action-button-hover: $dull-green-darker;
+$code-block-title-background: $dark-grey;
+$code-block-title: $white;
