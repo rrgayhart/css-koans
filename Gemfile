@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'unicorn'
 gem "paperclip", "~> 4.3"
+gem 'aws-sdk', '~> 1.6'
 
 group :development, :test do
   gem 'spring'

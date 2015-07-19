@@ -11,6 +11,7 @@
       <%= render partial: "codepen_render", locals: { problem: @koan.problem, name: @koan.name } %>
     </div>
     <div class="goal-block">
+      <%= image_tag @koan.solution.image.url(:top_crop) %>
     </div>
   </div>
   <div class="interaction-row clearfix">
