@@ -12,4 +12,8 @@ class Solution < ActiveRecord::Base
   def image_permalink
     "http://codepen.io/#{codepen_username}/pen/#{codepen_slug}/image/large.png"
   end
+
+  def top_crop_image_url
+    image.url(:top_crop)
+  end
 end
