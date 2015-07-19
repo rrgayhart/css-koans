@@ -78,8 +78,26 @@
   border: 1px solid $black;
   border-radius: 6px;
   margin-top: -261px;
+  overflow: hidden;
   @media (max-width: $screen-md-min) {
     @include fluid-span-12();
     margin: 20px 0 0 0;
+  }
+  .goal-title-block {
+    background: $code-block-title-background;
+    text-align: center;
+    p {
+      display: inline-block;
+      position: relative;
+      padding: 5px 16px 5px;
+      color: $code-block-title;
+    }
+  }
+
+  .goal-visual-block {
+    padding: 5px;
+    img {
+      width: 900px;
+    }
   }
 }

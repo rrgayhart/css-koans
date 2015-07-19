@@ -43,6 +43,12 @@ This project uses [rspec](https://github.com/rspec/rspec-rails), [factory girl](
 3. Run `rake db:test:prepare` to get the database up and started for
    testing.
 
+### Paperclip & ImageMagick
+
+The project uses the [paperclip](https://github.com/thoughtbot/paperclip) gem for image management.
+
+In order to use Paperclip, you will need to install ImageMagick. If you have homebrew installed on OS-X you can run `brew install imagemagick`. You can also download the [binary releases of ImageMagick](http://www.imagemagick.org/script/binary-releases.php).
+
 ### Environment Variables
 
 The project uses [dotenv-rails](https://github.com/bkeepers/dotenv) to store environment variables.
