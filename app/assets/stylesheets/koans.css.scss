@@ -60,9 +60,10 @@
       @include fluid-span-12();
     }
 
-    .codepen-fork {
+    .codepen-fork, .github-fork {
       @include forkButton();
       width: 45%;
+      margin-bottom: 10px;
       @media (max-width: $screen-md-min) {
         width: 100%;
       }
