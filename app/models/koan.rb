@@ -6,7 +6,13 @@ class Koan < ActiveRecord::Base
   has_one :problem, dependent: :destroy
   has_one :solution, dependent: :destroy
 
+  GITHUB_ORGANIZATION = 'css-koans'
+
   def codepen_permalink
     "http://codepen.io/#{codepen_username}/pen/#{codepen_slug}/"
+  end
+
+  def github_permalink
+    "https://github.com/#{GITHUB_ORGANIZATION}/#{github_slug}"
   end
 end
