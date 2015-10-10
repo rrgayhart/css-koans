@@ -17,15 +17,9 @@ ActiveRecord::Schema.define(version: 20150718215609) do
   enable_extension "plpgsql"
 
   create_table "koans", force: true do |t|
-    t.string   "name",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "problems", force: true do |t|
+    t.string   "name",                                   null: false
     t.string   "codepen_slug",                           null: false
     t.string   "codepen_username", default: "rrgayhart", null: false
-    t.integer  "koan_id"
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
   end
