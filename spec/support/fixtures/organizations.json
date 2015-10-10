@@ -1,0 +1,11 @@
+[{:login=>"css-koans",
+ :id=>13409184,
+ :url=>"https://api.github.com/orgs/css-koans",
+ :repos_url=>"https://api.github.com/orgs/css-koans/repos",
+ :events_url=>"https://api.github.com/orgs/css-koans/events",
+ :members_url=>"https://api.github.com/orgs/css-koans/members{/member}",
+ :public_members_url=>
+  "https://api.github.com/orgs/css-koans/public_members{/member}",
+ :avatar_url=>"https://avatars.githubusercontent.com/u/13409184?v=3",
+ :description=>nil}
+]

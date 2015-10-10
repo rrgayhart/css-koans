@@ -2,7 +2,10 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'database_cleaner'
-require "paperclip/matchers"
+require 'paperclip/matchers'
+require 'webmock/rspec'
+
+WebMock.disable_net_connect!(allow_localhost: true)
 
 Dir["#{Rails.root}/spec/support/*.rb"].each { |file| require file }
 
@@ -21,6 +24,7 @@ RSpec.configure do |config|
 
   config.before :each do
     DatabaseCleaner.strategy = :transaction
+    stub_request(:any, /api.github.com/).to_rack(FakeGitHub)
   end
 
   config.before :each do

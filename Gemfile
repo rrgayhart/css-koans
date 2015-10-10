@@ -15,6 +15,7 @@ gem 'aws-sdk', '~> 1.6'
 gem 'octokit', "~> 4.0"
 
 group :development, :test do
+  gem 'sinatra'
   gem 'spring'
   gem 'byebug'
   gem 'rspec-rails'
@@ -22,6 +23,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'webmock'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'shoulda'
