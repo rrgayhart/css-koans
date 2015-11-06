@@ -1,30 +1,42 @@
-<section class="koan-show-container clearfix">
-  <div class="koan-email-container clearfix">
-    <div class="email-heading clearfix">
-      <h3><%= @koan.name %></h3>
-    </div>
-    <div class="email-body clearfix">
-    </div>
-  </div>
-  <div class="code-row clearfix">
-    <div class="code-block clearfix">
-      <%= render partial: "codepen_render", locals: { koan: @koan } %>
-    </div>
-    <div class="goal-block">
-      <div class="goal-title-block">
-        <p>The Propsed Design</p>
+<section class="koan-show-container">
+  <div class="koan-email-container pure-g">
+    <div class="koan-email pure-u-24-24">
+      <div class="email-heading">
+        <h3><%= @koan.name %></h3>
       </div>
-      <div class="goal-visual-block">
-        <%= image_tag @koan.solution.image.url(:top_crop) %>
+      <div class="email-body">
       </div>
     </div>
   </div>
-  <div class="interaction-row clearfix">
-    <div class="fork-button-block clearfix">
-      <%= link_to('Fork on Codepen', @koan.codepen_permalink, class: 'codepen-fork', :target => "_blank") %>
-      <%= link_to('Fork on Github', @koan.github_permalink, class: 'github-fork', :target => "_blank") %>
+  <div class="code-row pure-g">
+    <div class="pure-u-1-1 pure-u-md-1-2 pure-gutter">
+      <div class="code-block">
+        <%= render partial: "codepen_render", locals: { koan: @koan } %>
+      </div>
     </div>
-    <div class="think-about-row clearfix">
+    <div class="pure-u-1-1 pure-u-md-1-2 pure-gutter">
+      <div class="goal-block">
+        <div class="goal-title-block">
+          <p>The Propsed Design</p>
+        </div>
+        <div class="goal-visual-block">
+          <%= image_tag @koan.solution.image.url(:top_crop) %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="interaction-row pure-g">
+    <div class="fork-button-block pure-u-1-1 pure-u-md-1-2">
+      <div class="pure-g">
+        <div class="pure-u-1-1 pure-u-md-1-2 pure-gutter">
+          <%= link_to('Fork on Codepen', @koan.codepen_permalink, class: 'codepen-fork', :target => "_blank") %>
+        </div>
+        <div class="pure-u-1-1 pure-u-md-1-2 pure-gutter">
+          <%= link_to('Fork on Github', @koan.github_permalink, class: 'github-fork', :target => "_blank") %>
+        </div>
+      </div>
+    </div>
+    <div class="think-about-row pure-u-1-2">
     </div>
   </div>
 </section>
