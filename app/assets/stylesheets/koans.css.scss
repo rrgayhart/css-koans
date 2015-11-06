@@ -1,15 +1,10 @@
 .koan-show-container {
   @include container();
+  padding: 8px 20px;
 }
 
 .koan-email-container {
-  @include fluid-span-10();
-  @include fluid-offset-1();
-  position: relative;
-  float: left;
-  clear: both;
-  height: 191px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .email-heading {
@@ -25,47 +20,29 @@
 }
 
 .email-body {
-  width: 100%;
   background-color: $email-body;
   height: 152px;
   overflow: scroll;
 }
 
-.code-row {
-  @include fluid-span-10();
-  @include fluid-offset-1();
-}
-
 .code-block {
-  @include fluid-span-6();
   height: 261px;
-  margin-top: 20px;
   border: 1px solid $black;
   border-radius: 6px;
   overflow: hidden;
   z-index: 1000;
   @media (max-width: $screen-md-min) {
-    @include fluid-span-12();
   }
 }
 
 .interaction-row {
   margin-top: 27px;
-  @include fluid-span-10();
-  @include fluid-offset-1();
 
   .fork-button-block {
-    @include fluid-span-6();
-    @media (max-width: $screen-md-min) {
-      @include fluid-span-12();
-    }
-
     .codepen-fork, .github-fork {
       @include forkButton();
-      width: 45%;
-      margin-bottom: 10px;
       @media (max-width: $screen-md-min) {
-        width: 100%;
+        margin-bottom: 10px;
       }
     }
   }
@@ -73,15 +50,11 @@
 
 
 .goal-block {
-  @include fluid-span-6();
-  @include fluid-offset-6();
   height: 261px;
   border: 1px solid $black;
   border-radius: 6px;
-  margin-top: -261px;
   overflow: hidden;
   @media (max-width: $screen-md-min) {
-    @include fluid-span-12();
     margin: 20px 0 0 0;
   }
   .goal-title-block {
