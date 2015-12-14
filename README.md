@@ -18,7 +18,6 @@
 5. Make sure you have Postgres installed. Use Homebrew or download the
    [client](http://postgresapp.com/) if you don't.
 6. `bundle install`
-7. `npm install`
 
 ## Running the App
 1. `bundle exec rails s`
