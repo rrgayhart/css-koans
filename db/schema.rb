@@ -17,11 +17,12 @@ ActiveRecord::Schema.define(version: 20151010184211) do
   enable_extension "plpgsql"
 
   create_table "koans", force: true do |t|
-    t.string   "name",                                   null: false
-    t.string   "codepen_slug",                           null: false
-    t.string   "codepen_username", default: "rrgayhart", null: false
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.string   "name",                                    null: false
+    t.string   "codepen_slug",                            null: false
+    t.string   "codepen_username",  default: "rrgayhart", null: false
+    t.text     "client_email_body",                       null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
     t.string   "github_slug"
   end
 

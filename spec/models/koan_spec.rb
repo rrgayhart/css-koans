@@ -6,6 +6,7 @@ describe Koan do
     it { should validate_presence_of :name }
     it { should validate_presence_of :codepen_slug }
     it { should validate_presence_of :codepen_username }
+    it { should validate_presence_of :client_email_body }
     it { should have_one :solution }
   end
 

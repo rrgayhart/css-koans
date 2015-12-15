@@ -4,6 +4,7 @@ class CreateKoans < ActiveRecord::Migration
       t.string :name, null: false
       t.string :codepen_slug, null: false
       t.string :codepen_username, null: false, :default => 'rrgayhart'
+      t.text :client_email_body, null: false
       t.timestamps null: false
     end
   end
