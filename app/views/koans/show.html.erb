@@ -1,11 +1,7 @@
 <section class="koan-show-container">
   <div class="koan-email-container pure-g">
     <div class="koan-email pure-u-24-24">
-      <div class="email-heading">
-        <h3><%= @koan.name %></h3>
-      </div>
-      <div class="email-body">
-      </div>
+      <%= render partial: "client_email", locals: { koan: @koan } %>
     </div>
   </div>
   <div class="code-row pure-g">
