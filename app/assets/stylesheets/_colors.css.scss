@@ -10,10 +10,13 @@ $dull-green: rgb(64, 171, 149);
 $dull-green-lighter: rgb(117, 194, 179);
 $lemon-yellow: rgb(218, 231, 21);
 
+$codepen-link-blue: #76daff;
+
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $off-white: rgba(251, 247, 247, 0.98);
 $light-grey: rgb(222, 222, 222);
+$medium-grey: #b3b3b3;
 $dull-grey: rgb(102, 102, 102);
 $dark-grey: #3d3d3e;
 
@@ -22,9 +25,12 @@ $dark-grey: #3d3d3e;
  * Contextual Assignments
  * These should be context specific assignments of the colors above, e.g. $highlight-color: $lime;
  */
-
 $background: $dull-blue;
 $container-background: $white;
+$email-attachment-background: $light-grey;
+$hover-accent: lighten($codepen-link-blue, 15%);
+$email-header: $dull-grey;
+$email-light-text: $medium-grey;
 $email-border-bottom: $dull-grey;
 $email-body: $off-white;
 $action-button: $dull-green;

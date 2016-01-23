@@ -1,43 +1,13 @@
+@import "koan-email";
+@import "koan-code";
+
 .koan-show-container {
   @include container();
   padding: 8px 20px;
 }
 
-.koan-email-container {
-  margin: 20px 0;
-}
-
-.email-heading {
-  border-bottom: 1px solid $email-border-bottom;
-  height: 39px;
-  width: 100%;
-  h3 {
-    margin: 5px 0 0 4.01786%;
-    line-height: 1.38;
-    font-size: 1.313em;
-    font-weight: 400;
-  }
-}
-
-.email-body {
-  background-color: $email-body;
-  height: 152px;
-  overflow: scroll;
-}
-
-.code-block {
-  height: 261px;
-  border: 1px solid $black;
-  border-radius: 6px;
-  overflow: hidden;
-  z-index: 1000;
-  @media (max-width: $screen-md-min) {
-  }
-}
-
 .interaction-row {
   margin-top: 27px;
-
   .fork-button-block {
     .codepen-fork, .github-fork {
       @include forkButton();
@@ -47,7 +17,6 @@
     }
   }
 }
-
 
 .goal-block {
   height: 261px;

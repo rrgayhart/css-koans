@@ -1,0 +1,9 @@
+.code-block {
+  height: 261px;
+  border: 1px solid $black;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1000;
+  @media (max-width: $screen-md-min) {
+  }
+}
