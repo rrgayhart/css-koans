@@ -1,10 +1,13 @@
-<div class="email-heading">
-  <h3><%= koan.name %></h3>
-</div>
-<div class="email-body">
-  <span>Craig Rubin</span>
-  <span>&lt;crubin@youragency.io&gt;</span>
-  <p class="header-to">to CSS Koans</p>
-  <%= koan.client_email_body %>
-  <p>Thanks,<br>Craig the Client</p>
+<div class="email-text">
+  <div class="top-section">
+    <h2><%= koan.name %></h2>
+    <p>Craig Rubin <span class="date"> - Sent at 2:45pm on 6/5/2016</p>
+    <div class="attachment">
+      <i class="fa fa-paperclip"></i>
+    </div>
+  </div>
+  <div class="bottom-section">
+    <p><%= koan.client_email_body %></p>
+    <p>Thanks,<br>Craig the Client</p>
+  </div>
 </div>
