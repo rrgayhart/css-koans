@@ -11,15 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160128214312) do
+ActiveRecord::Schema.define(version: 20160308161158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "considerations", force: true do |t|
-    t.string  "consideration"
-    t.integer "koan_id"
+    t.string   "point"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
+  create_table "considerations_koans", force: true do |t|
+    t.integer "koan_id"
+    t.integer "consideration_id"
+  end
+
+  add_index "considerations_koans", ["consideration_id"], name: "index_considerations_koans_on_consideration_id", using: :btree
+  add_index "considerations_koans", ["koan_id"], name: "index_considerations_koans_on_koan_id", using: :btree
 
   create_table "koans", force: true do |t|
     t.string   "name",                                    null: false
