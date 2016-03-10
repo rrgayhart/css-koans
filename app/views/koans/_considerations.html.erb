@@ -1,0 +1,12 @@
+<div class="consideration-block base-koan-show-block">
+  <div class="show-title-block">
+    <p>Things to Consider</p>
+  </div>
+  <div class="show-inner-block">
+    <ul>
+      <% considerations.each do |consideration| %>
+        <li><%= consideration.point %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
