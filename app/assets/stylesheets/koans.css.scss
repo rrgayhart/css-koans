@@ -18,15 +18,14 @@
   }
 }
 
-.goal-block {
-  height: 261px;
+.base-koan-show-block {
+  overflow: hidden;
   border: 1px solid $black;
   border-radius: 6px;
-  overflow: hidden;
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-sm-min) {
     margin: 20px 0 0 0;
   }
-  .goal-title-block {
+  .show-title-block {
     background: $code-block-title-background;
     text-align: center;
     p {
@@ -36,11 +35,20 @@
       color: $code-block-title;
     }
   }
-
-  .goal-visual-block {
+  .show-inner-block {
     padding: 5px;
     img {
       width: 900px;
     }
+  }
+}
+
+.goal-block {
+  height: 261px;
+}
+
+.consideration-block {
+  .show-inner-block {
+    padding: 10px;
   }
 }

@@ -8,6 +8,7 @@ describe Koan do
     it { should validate_presence_of :codepen_username }
     it { should validate_presence_of :client_email_body }
     it { should have_one :solution }
+    it { should have_and_belong_to_many :considerations }
   end
 
   describe '#codepen_permalink' do
