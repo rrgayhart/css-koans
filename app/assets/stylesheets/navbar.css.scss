@@ -1,0 +1,30 @@
+#header {
+  background: $header-background;
+  overflow: hidden;
+  z-index: 10;
+  min-height: 40px;
+}
+
+.header-btn {
+  background: $header-btn;
+  color: $header-btn-color;
+  line-height: 30px;
+  margin-right: 8px;
+  min-width: 30px;
+  border-radius: 3px;
+  display: block;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  height: 30px;
+}
+
+.header-button-text {
+  padding: 0 8px;
+}
+
+.right-header {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
